@@ -1,0 +1,22 @@
+//& 可以試試用資料夾來分類。像是分為helpers, base, utils, layout, pages. 資料夾裡面再將他們各自拆分成檔案（例如：utils裡面可以有button, padding）
+
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+*{
+  font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}

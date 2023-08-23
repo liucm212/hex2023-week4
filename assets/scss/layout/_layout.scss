@@ -1,0 +1,40 @@
+//! 和ejs內的layout差別在於，該ejs scss的設定就是專屬於該layout的。但是當這個ejs內裡面又要放一個常常會用到的layout，這時就必須用這裡的layout做設定。 
+// title-header
+.title{
+  &-header{
+    border-width: 8px;
+  }
+}
+
+// list
+.list{
+  flex-wrap: wrap;
+  color: $white;
+  &-item{
+    display: block;
+    width: 50%;
+    text-align: center;
+    border: 1px solid $white;
+    a{
+      padding-top: 12px;
+      padding-bottom: 12px;
+      transition: color, 0.3s;
+      &:hover{
+        color: $third;
+      }
+    }
+  }
+  @include Tablet{
+    flex-wrap: nowrap;
+    &-item{
+      text-align: right;
+      border: none;
+      width: auto;
+      font-size: 20px;
+      a{
+        padding-top:25px;
+        padding-bottom: 25px;
+      }
+    }
+  }
+}

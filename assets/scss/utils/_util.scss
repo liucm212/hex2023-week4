@@ -1,0 +1,275 @@
+// display
+.d{
+  &-block{
+    display: block;
+  }
+  &-flex{
+    display: flex;
+  }
+  &-none{
+    display: none;
+  }
+  &-md{
+    @include Tablet{
+      &-block{
+        display: block;
+      }
+      &-flex{
+        display: flex;
+      }
+      &-none{
+        display: none;
+      }
+    }
+  }
+  &-lg{
+    @include Desktop{
+      &-block{
+        display: block;
+      }
+      &-flex{
+        display: flex;
+      }
+      &-none{
+        display: none;
+      }
+    }
+  }
+}
+
+// flex
+.flex{
+  &-column{
+    flex-direction: column;
+  }
+  &-md{
+    @include Tablet{
+      &-column{
+        flex-direction: column;
+      }
+    }
+  }
+  
+}
+.justify-content{
+  &-between{
+    justify-content: space-between;
+  }
+  &-end{
+    justify-content: flex-end;
+  }
+  &-md-between{
+    @include Tablet{
+      justify-content:space-between;
+    }
+  }
+}
+.align-items{
+  &-start{
+    align-items: flex-start;
+  }
+  &-center{
+    align-items: center;
+  }
+  &-end{
+    align-items: flex-end;
+  }
+  &-md-start{
+    @include Tablet{
+      align-items: flex-start;
+    }
+  }
+  &-md-center{
+    @include Tablet{
+      align-items: center;
+    }
+  }
+  &-md-end{
+    @include Tablet{
+      align-items: flex-end;
+    }
+  }
+}
+.align-self{
+  &-md{
+    @include Tablet{
+      &-stretch{
+        align-self: stretch;
+      }
+    }
+  }
+}
+
+.container{
+  width: 100%;
+  max-width: 576px;
+  padding: 0 15px;
+  margin: 0 auto;
+  //! media query 的範圍是大包小，大範圍寫前面
+  // in tablet device, max-width of container is 696px
+  @include Tablet{
+    max-width:768px;
+    padding: 0 36px;
+  }
+  // in Tablet device, max-width of container is 345px
+  @include Desktop{
+    max-width:1296px;
+    padding: 0;
+  }
+}
+  
+// link hover
+.link{
+  &-third{
+    transition: color, 0.3s;
+    &:hover{
+      color: $third;
+    }
+  }
+}
+
+// border
+.border{
+  transition: 0.1s;
+  border: solid 1px $black;
+  &-left{
+    border-left: 1px solid $black;
+  }
+  &-right{
+    border-right: 1px solid $black;
+  }
+  &-primary{
+    border-color: $primary;
+  }
+  &-gray{
+    border-color: $gray;
+  }
+  &-hover{
+    &:hover{
+      border-color: $primary;
+    }
+  }
+}
+
+//cursor
+.pointer{
+  cursor: pointer;
+} 
+
+
+// width
+.w{
+  &-auto{
+    width: auto;
+  }
+  &-15{
+    width: 15%;
+  }
+  &-20{
+    width: 20%;
+  }
+  &-40{
+    width: 40%;
+  }
+  &-50{
+    width: 50%;
+  }
+  &-60{
+    width: 60%;
+  }
+  &-70{
+    width: 70%;
+  }
+  &-80{
+    width: 80%;
+  }
+  &-85{
+    width: 85%;
+  }
+  &-100{
+    width: 100%;
+  }
+  &-5-12{
+    width: 41.666%;
+  }
+  &-7-12{
+    width: 58.333%;
+  }
+  &-8-12{
+    width: 66.666%;
+  }
+  @include Tablet{
+    &-md{
+      &-auto{
+        width: auto;
+      }
+      &-15{
+        width: 15%;
+      }
+      &-40{
+        width: 40%;
+      }
+      &-50{
+        width: 50%;
+      }
+      &-60{
+        width: 60%;
+      }
+      &-70{
+        width: 70%;
+      }
+      &-85{
+        width: 85%;
+      }
+      &-100{
+        width: 100%;
+      }
+      &-5-12{
+      width: 41.666%;
+      }
+      &-7-12{
+        width: 58.333%;
+      }
+      &-8-12{
+        width: 66.666%;
+      }
+    }
+  }
+  @include Desktop{
+    &-lg{
+      &-auto{
+        width: auto;
+      }
+      &-15{
+        width: 15%;
+      }
+      &-40{
+        width: 40%;
+      }
+      &-50{
+        width: 50%;
+      }
+      &-60{
+        width: 60%;
+      }
+      &-70{
+        width: 70%;
+      }
+      &-85{
+        width: 85%;
+      }
+      &-100{
+        width: 100%;
+      }
+      &-5-12{
+        width: 41.666%;
+      }
+      &-7-12{
+        width: 58.333%;
+      }
+      &-8-12{
+        width: 66.666%;
+      }
+    }
+  }
+}

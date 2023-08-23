@@ -1,0 +1,23 @@
+//& CSS reset
+@import './base/reset';
+
+//& helpers
+@import './helpers/variables' ; 
+
+//& 一些工具類或底層基礎的設定
+@import './base/base';
+@import './utils/mixin';
+@import './utils/color';
+@import './utils/spacing';
+@import './utils/util';
+@import './utils/text';
+
+//& ejs layout設定
+@import './layout/layout';
+@import './layout/header';
+@import './layout/footer';
+
+//& 每頁的特別設定
+@import './pages/home';
+@import './pages/index';
+

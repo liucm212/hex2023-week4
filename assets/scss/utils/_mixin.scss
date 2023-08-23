@@ -1,0 +1,18 @@
+// 製作各裝置的media query
+@mixin Tablet{
+  @media (min-width:768px) {
+    @content;
+  }
+}
+@mixin Desktop{
+  @media (min-width:1296px) {
+    @content;
+  }
+}
+
+// 調整li間距的mixin（不動到最後一個的margin）
+@mixin li-gap($mr:0){
+  li:not(:last-child){
+    margin-right: $mr;
+  }
+}

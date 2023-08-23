@@ -1,0 +1,10 @@
+.header{
+  &-logo{
+    width: 80px;
+    box-sizing: content-box;
+    padding: 16px 0;
+    @include Tablet{
+      padding: 0;
+    }
+  }
+}

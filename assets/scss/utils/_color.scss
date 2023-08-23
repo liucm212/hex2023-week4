@@ -1,0 +1,15 @@
+// backgroud color
+.bg{
+  &-primary{
+    background-color: $primary;
+  }
+}
+// text color
+.text{
+  &-white{
+    color: $white;
+  }
+  &-black{
+    color: $black;
+  }
+}
