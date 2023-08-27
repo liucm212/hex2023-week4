@@ -23,15 +23,15 @@
         <label class="fs-lg-24 me-8 me-lg-16 w-20 w-lg-auto" for="shop"
           >選擇分店</label
         >
-        <div
+        <select
           id="shop"
-          class="d-flex justify-content-between align-items-center border border-gray border-hover ps-12 pe-20 w-80 w-lg-auto"
+          class="border border-gray border-hover py-6 ps-12 pe-20 w-80 w-lg-auto fs-18 text-gray"
         >
-          <p class="my-6 fs-18 text-gray">台北中山旗艦店</p>
-          <span class="material-symbols-outlined text-gray">
+          <option value="台北中山旗艦店" selected>台北中山旗艦店</option>
+          <!-- <span class="material-symbols-outlined text-gray">
             keyboard_arrow_down
-          </span>
-        </div>
+          </span> -->
+        </select>
       </div>
       <!-- d-lg-flex -->
       <div class="d-lg-flex mb-lg-80">
@@ -46,20 +46,23 @@
             <p class="border border-gray ps-24 py-6 py-md-12 fs-24">
               台北中山旗艦店
             </p>
-            <div class="py-16 px-24 border border-gray">
-              <div class="d-flex align-item-center mb-8">
+            <ul class="py-16 px-24 border border-gray">
+              <li class="d-flex align-item-center mb-8">
                 <span class="material-symbols-outlined me-8"> call </span>
-                <span class="fs-20">電話：(02)000-1234</span>
-              </div>
-              <div class="d-flex align-item-center mb-8">
+                <div class="d-flex fs-20">
+                  <span>電話：</span>
+                  <a href="tel:+(02)000-1234">(02)000-1234</a>
+                </div>
+              </li>
+              <li class="d-flex align-item-center mb-8">
                 <span class="material-symbols-outlined me-8"> schedule </span>
                 <span class="fs-20">營業時間：10:00-21:00</span>
-              </div>
-              <div class="d-flex align-item-center">
+              </li>
+              <li class="d-flex align-item-center">
                 <span class="material-symbols-outlined me-8"> location_on</span>
                 <span class="fs-20">地址：台北市中山區南京東路25巷2-1號</span>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
         <!-- 地圖 -->

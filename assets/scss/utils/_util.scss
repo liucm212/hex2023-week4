@@ -102,19 +102,20 @@
 
 .container{
   width: 100%;
-  max-width: 576px;
-  padding: 0 15px;
+  // 600 -2*12 = 576
+  max-width: 600px;
+  padding: 0 12px;
   margin: 0 auto;
   //! media query 的範圍是大包小，大範圍寫前面
   // in tablet device, max-width of container is 696px
   @include Tablet{
-    max-width:768px;
-    padding: 0 36px;
+    // 792 -2*12 = 768
+    max-width:792px;
   }
   // in Tablet device, max-width of container is 345px
   @include Desktop{
-    max-width:1296px;
-    padding: 0;
+    // 1320 -2*12 = 1296
+    max-width:1320px;
   }
 }
   
